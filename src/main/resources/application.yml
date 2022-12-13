@@ -4,7 +4,8 @@ spring:
     username: root
     password: 411002
     url: jdbc:mysql://localhost:3306/db_myvue?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
-
+server:
+  port: 8090
 #mybatis-plus:
 #  mapper-locations: classpath*:/mapper/**/*mapper.xml
 

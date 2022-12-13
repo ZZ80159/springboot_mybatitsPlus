@@ -1,13 +1,12 @@
 package com.xd.controller;
 
 
+import com.config.Result.Result;
 import com.xd.service.FunctionService;
-import com.xd.view.FunctionView;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @RestController
 public class FunctionController {
@@ -16,7 +15,7 @@ public class FunctionController {
 
 
     @PostMapping("/findFunction")
-    public List<FunctionView> findFunction() {
+    public Result<Object> findFunction() {
         return functionService.selectFunctionViews();
     }
 
